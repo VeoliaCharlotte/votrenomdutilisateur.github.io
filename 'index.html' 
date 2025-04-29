@@ -1,0 +1,17 @@
+<script>
+        function getMobileOperatingSystem() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                window.location.href = 'https://play.google.com/store/apps/details?id=fr.atlanticeau.prod&hl=fr';
+            }
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = 'https://apps.apple.com/fr/app/veolia-moi-atlanticeau/id6740821335';
+            }
+        }
+        window.onload = getMobileOperatingSystem;
+    </script>
+</head>
+<body>
+    <h1>Redirection en cours...</h1>
+</body>
+</html>
